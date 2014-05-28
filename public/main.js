@@ -17,4 +17,19 @@ app.controller('ChatCtrl', function($scope, socket){
         $scope.msgs.push(data);
         $scope.$digest();
     });
+
+    $scope.show = function(name){
+    // Do whatever you want here
+        console.log(name);
+        $.ajax({
+          type: "POST",
+          data: $('#booking').serialize(),
+          url: 'http://simplebojirails.herokuapp.com/blogs',
+          // complete: function(e, xhr, settings){
+          //   $('#ajax_form').slideUp(800, function(){
+          //       $('#thank_you').slideDown(800);
+          //   });
+          // }
+        });
+    };
 });

@@ -5,7 +5,6 @@ var express = require('express'),
 
 http.listen(3000);
 
-
 io.sockets.on('connection', function(socket){
     socket.on('send msg', function(data){
         io.sockets.emit('get msg', data);
