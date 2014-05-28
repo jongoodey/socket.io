@@ -14,8 +14,6 @@ io.sockets.on('connection', function(socket){
 
 app.use(logfmt.requestLogger());
 app.use(express.static(__dirname+'/public'));
-app.use(express.static(__dirname+'/bower_components'));
-
 
 
 // var express = require("express");

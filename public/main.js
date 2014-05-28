@@ -1,7 +1,7 @@
 var app = angular.module('chatApp', []);
 
 app.factory('socket', function(){
-    return io.connect('http://localhost:3000');
+    return io.connect('http://localhost:5000');
 });
 
 app.controller('ChatCtrl', function($scope, socket){
